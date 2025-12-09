@@ -21,7 +21,19 @@ with tab1:
         try:
             # Convertir texto a lista numérica
             data = [float(x.strip()) for x in data_input.split(",")]
- 
+
+         :root {
+  /* Paleta Pastel (Opción C) */
+  --color-1: #A3D5FF; /* primary */
+  --color-2: #FFC9A8; /* accent */
+  --color-3: #C8F7C5; /* success/green */
+  --color-4: #F8C8E0; /* highlight/pink */
+  --color-5: #EDE7B1; /* soft yellow */
+
+  /* Valores opcionales adicionales */
+  --bg-default: #ffffff;
+  --text-default: #222222;
+}
             st.success("Datos cargados correctamente.")
             st.write("Tamaño de la muestra:", len(data))
             st.write("Primeros valores:", data[:5])
